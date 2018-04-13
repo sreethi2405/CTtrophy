@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/myteam"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Myteam" />
+        <item
+            android:id="@+id/rules"
+            android:icon="@android:drawable/stat_sys_warning"
+            android:title="TrophyRules" />
+        <item
+            android:id="@+id/setfixtures"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Set Fixtures" />
+        <item
+            android:id="@+id/setlive"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Set Live Matches" />
+
+    </group>
+<group>
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/contactus"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+</group>
+    <item
+        android:id="@+id/logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="LogOut" />
+</menu>

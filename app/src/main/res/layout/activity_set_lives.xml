@@ -1,0 +1,257 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/frontbg6">
+<View
+    android:id="@+id/opacityFilter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:layout_alignParentBottom="true"
+    android:alpha="0.5">
+</View>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+       >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Team 1"
+        android:textColor="#ffffff"
+           android:textStyle="bold"
+           android:textSize="20dp"
+        android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Team 2"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/op1"
+            android:background="@drawable/bg_spinner"
+            android:layout_weight="1">
+
+        </Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/op2"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            android:layout_marginLeft="10dp">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Batting"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/batting"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinner"
+            android:layout_marginLeft="10dp">
+
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Scores"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Wickets"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Overs"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/getscore"
+            android:paddingLeft="20dp"
+            android:background="@drawable/mybutton3"
+            android:textColor="#000000"
+            android:inputType="number"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/wickets"
+            android:background="@drawable/bg_spinner"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+        </Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_spinner"
+            android:id="@+id/overs"
+            android:textColor="#000000"
+            android:layout_weight="1">
+
+        </Spinner>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Runs"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:layout_marginTop="10dp">
+        <Button android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/one"
+            android:layout_weight="1"/>
+        <Button android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="2"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/two"
+            android:layout_weight="1"/>
+        <Button android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="3"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/three"
+            android:layout_weight="1"/>
+        <Button android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="4"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/four"
+            android:layout_weight="1"/>
+        <Button android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="5"
+            android:id="@+id/five"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+        <Button android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="6"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/six"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:weightSum="2"
+        android:layout_marginTop="30dp">
+
+
+        <Button android:background="@drawable/mybutton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/update"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="UpdateScore"
+            android:layout_weight="1"/>
+        <Button android:background="@drawable/mybutton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relase"
+            android:text="Remove"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+

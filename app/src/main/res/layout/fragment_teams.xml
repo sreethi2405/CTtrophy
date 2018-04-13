@@ -1,0 +1,23 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/teams">
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5">
+    </View>
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ListView
+        android:id="@+id/teamlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+
+        />
+</RelativeLayout>

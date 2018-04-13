@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">813555710741-r48ve3os3fjgs87fj8852dp9h0qt35u6.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://cttrophy-7302b.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">813555710741</string>
+    <string name="google_api_key" translatable="false">AIzaSyBnvjZMvDboI0sPU2PC8SrV_-YlvjePMM8</string>
+    <string name="google_app_id" translatable="false">1:813555710741:android:fd36f3692a7f2e74</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBnvjZMvDboI0sPU2PC8SrV_-YlvjePMM8</string>
+    <string name="google_storage_bucket" translatable="false">cttrophy-7302b.appspot.com</string>
+    <string name="project_id" translatable="false">cttrophy-7302b</string>
+</resources>

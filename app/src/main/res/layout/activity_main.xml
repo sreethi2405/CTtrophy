@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frontbg5">
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Registration"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/getemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:hint="Enter Your email"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/user"/>
+
+        <EditText
+            android:id="@+id/getpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColorHint="#ffffff"
+            android:hint="Enter Your Password"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/pass1"/>
+        <CheckBox
+            android:id="@+id/showp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Show Password"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+           />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="SignUp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#999999"
+            android:background="@drawable/mybutton2"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    >
+        <Button
+            android:id="@+id/signin"
+            android:background="@drawable/mybutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+</LinearLayout>
+
+</RelativeLayout>

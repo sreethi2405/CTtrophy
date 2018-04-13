@@ -1,0 +1,465 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f6060b0b">
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6060b0b"
+    android:layout_alignParentBottom="true"
+    android:alpha="1">
+</View>
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="1">
+    <Spinner
+        android:id="@+id/getmyteam"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_spinner1"
+        android:layout_weight="1"
+        >
+    </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+    <Button
+ android:textColor="#000000"
+        android:id="@+id/saveteam"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Save"
+
+        android:textStyle="bold"
+        android:background="@drawable/playerbutton"/>
+           <Button
+              
+                android:textColor="#000000"
+               android:textStyle="bold"
+                android:id="@+id/changeteam"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/playerbutton"
+            android:layout_weight="1"
+            android:text="Change"
+            />
+    </LinearLayout>
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/layout2">
+    </LinearLayout>
+</LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="7"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p1p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_marginBottom="20dp"/>
+
+            <ImageView
+         android:visibility="invisible" android:id="@+id/p2p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/p1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/playerbutton1"
+                android:textColor="#ffffff"
+
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/p2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               
+                android:layout_weight="1"
+                android:background="@drawable/playerbutton1"
+                android:textColor="#ffffff"
+
+                android:visibility="visible" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/layout2">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/p3p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p4p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="50dp">
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/layout2">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p5p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+               />
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p6p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+               />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="50dp">
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/layout2">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p7p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+              />
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p8p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+              />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="50dp">
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/layout2">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p9p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p10p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="50dp">
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/layout2">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p11p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+/>
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p12p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="50dp">
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/layout2">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p13p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+            <ImageView
+         android:visibility="invisible"
+                android:id="@+id/p14p"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="50dp">
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+           <Button
+
+                android:textColor="#ffffff" android:visibility="visible"
+                android:background="@drawable/playerbutton1"
+                android:id="@+id/p14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/layout2">
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

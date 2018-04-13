@@ -1,0 +1,95 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/fixtures6">
+    <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.1">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="50dp"
+            android:id="@+id/fixturetitle"
+
+            android:background="@drawable/bg_spinner1"
+            ></Spinner>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+               android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/fixturet1"
+
+android:background="@drawable/bg_spinner1"
+                ></Spinner>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/fixturet2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+
+android:background="@drawable/bg_spinner1"
+                ></Spinner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/setfix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mybutton2"
+                android:layout_weight="1"
+                android:text="SET FIXTURE"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/delfix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mybutton2"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="DELETE FIXTURE"
+                android:layout_margin="10dp"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/deleteall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mybutton2"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="DELETE ALL FIXTURE"
+            android:textSize="20dp"
+            android:layout_margin="10dp"/>
+        </LinearLayout>
+
+
+
+
+  
+</RelativeLayout>
